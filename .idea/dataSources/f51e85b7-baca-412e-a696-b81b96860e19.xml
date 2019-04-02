@@ -32,17 +32,17 @@
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="14" parent="6" name="Make">
+    <column id="14" parent="6" name="make">
       <Position>3</Position>
-      <DataType>text|0s</DataType>
+      <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="15" parent="6" name="Model">
+    <column id="15" parent="6" name="model">
       <Position>4</Position>
-      <DataType>text|0s</DataType>
+      <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="16" parent="6" name="Year">
+    <column id="16" parent="6" name="year">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
