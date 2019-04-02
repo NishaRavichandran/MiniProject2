@@ -17,7 +17,7 @@ class UpdateCarTest extends TestCase
     {
         $car = Car::find(5);
 
-        $car->year = '2000';
+        $car->year='2000';
 
         $this->assertTrue($car->save());
     }
