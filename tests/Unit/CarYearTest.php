@@ -30,7 +30,7 @@ class CarYearTest extends TestCase
 
         $year = (int) $car->year;
 
-        $this->assertInternalType(IsType::TYPE_INT,$year);
+        $this->assertIsInt($year);
     }
 
 }

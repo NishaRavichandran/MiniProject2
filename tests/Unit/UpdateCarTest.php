@@ -20,5 +20,6 @@ class UpdateCarTest extends TestCase
         $car->year='2000';
 
         $this->assertTrue($car->save());
+
     }
 }

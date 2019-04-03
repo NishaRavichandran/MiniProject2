@@ -2,22 +2,21 @@
 
 namespace Tests\Unit;
 
-use App\User;
+use App\Car;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class DeleteUserTest extends TestCase
+class CarModelTestTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testDeleteUserTest()
+    public function testCarModelTest()
     {
-        $user = User::find(51);
+        $car = Car::first();
 
-        $this->assertTrue($user->delete());
-
+        $this->assertIsString($car->model);
     }
 }

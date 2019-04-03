@@ -18,5 +18,6 @@ class DeleteCarTest extends TestCase
         $car = Car::find(53);
 
         $this->assertTrue($car->delete());
+
     }
 }

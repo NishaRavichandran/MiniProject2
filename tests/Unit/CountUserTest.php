@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use App\User;
+use PHPUnit\Framework\Constraint\Count;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -18,7 +19,9 @@ class CountUserTest extends TestCase
         {
             $user = User::all();
 
-            $this->assertCount(50, $user);
+            $userCount = Count($user);
+
+            $this->assertEquals(50, $userCount);
         }
     }
 }
